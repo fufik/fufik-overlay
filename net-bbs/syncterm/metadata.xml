@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>fufikmail@gmail.com</email>
+		<name>fufik</name>
+	</maintainer>
+<longdescription lang="en">
+	An ANSI-BBS terminal from Synchronet Project 
+	designed to connect to remote BBSs via telnet, rlogin, or SSH. 
+	Supports ANSI music and the IBM charset when possible. 
+	Will run from a console, under X11 using XLib, or using SDL.
+</longdescription>
+<longdescription lang="ru">
+	ANSI-терминал из проекта Synchronet для подключения к доскам объявлений (BBS)
+	с возможностью подключения по telnet, rlogin или SSH. Поддерживает ANSI-музыку 
+	и кодировки IBM. Может быть запущен с консоли и через X11 с помощью XLib или SDL.
+</longdescription>
+<upstream>
+	<maintainer>
+		<email>jaakko.keranen@iki.fi</email>
+		<name>Jaakko Keränen</name>
+	</maintainer>
+	<bugs-to>https://github.com/skyjake/lagrange/issues</bugs-to>
+	<remote-id type="github">skyjake/lagrange</remote-id>
+</upstream>
+</pkgmetadata>

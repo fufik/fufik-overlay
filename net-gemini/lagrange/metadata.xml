@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>fufikmail@gmail.com</email>
+		<name>fufik</name>
+	</maintainer>
+<longdescription lang="en">
+	Lagrange is a desktop GUI client for browsing Geminispace. It offers
+	modern conveniences familiar from web browsers, such as smooth
+	scrolling, inline image viewing, multiple tabs, visual themes, Unicode
+	fonts, bookmarks, history, and page outlines.
+
+	Like the Gemini protocol, Lagrange has been designed with minimalism in
+	mind. It depends on a small number of essential libraries. It is written
+	in C and uses SDL for hardware-accelerated graphics. OpenSSL is used for
+	secure communications.
+</longdescription>
+<longdescription lang="ru">
+	Lagrange это браузер для сети Geminispace.
+	В нём присутствуют все прелести современных веб-браузеров: плавная прокрутка, 
+	встраивание изображений, вкладки, темы, шрифты в формате Юникод, закладки, 
+	история и многое другое.
+
+	Так же, как и протокол Gemini, Lagrange задумывался минималистичным -
+	у него совсем мало зависимостей, а его основа написана на C и SDL. Как и 
+	современные веб-браузеры, он поддерживает возможность безопасного соединения
+	с применением библиотеки OpenSSL.
+</longdescription>
+<use lang="en">
+	<flag name="mp3">Include mp3 playback support</flag>
+	<flag name="webp">Include webp support</flag>
+	<flag name="harfbuzz">Use <pkg>media-libs/harfbuzz</pkg> to shape text</flag>
+	<flag name="fribidi">Use <pkg>dev-libs/fribidi</pkg> for bidirectional text</flag>
+	<flag name="ipc">Use IPC to communicate between running instances</flag>
+	<flag name="kerning">Enable kerning in font renderer (slower)</flag>
+	<flag name="swrender">Use software rendering (X11)</flag>
+</use>
+<use lang="ru">
+	<flag name="mp3">Включить поддержку MP3</flag>
+	<flag name="webp">Включить поддержку WEBP</flag>
+	<flag name="harfbuzz">Использовать <pkg>media-libs/harfbuzz</pkg> для отрисовки текста</flag>
+	<flag name="fribidi">Использовать <pkg>dev-libs/fribidi</pkg> для двунаправленного</flag>
+	<flag name="ipc">Использовать IPC между окнами</flag>
+	<flag name="kerning">Включить кернинг шрифтов (медленно)</flag>
+	<flag name="swrender">Использовать программный рендер (X11)</flag>
+</use>
+
+<upstream>
+	<maintainer>
+		<email>jaakko.keranen@iki.fi</email>
+		<name>Jaakko Keränen</name>
+	</maintainer>
+	<bugs-to>https://github.com/skyjake/lagrange/issues</bugs-to>
+	<remote-id type="github">skyjake/lagrange</remote-id>
+</upstream>
+</pkgmetadata>
