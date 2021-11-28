@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" quality="experimental" status="unofficial">
+	<name>fufik-overlay</name>
+	<description>Fufik's Overlay</description>
+	<homepage>https://github.com/fufik/fufik-overlay</homepage>
+	<owner>
+		<email>fufikmail@gmail.com</email>
+		<name>fufik</name>
+	</owner>
+	<source type="git">https://github.com/fufik/fufik-overlay</source>
+	<feed>https://github.com/fufik/fufik-overlay/commits/master.atom</feed>
+</repo>
+</repositories>
