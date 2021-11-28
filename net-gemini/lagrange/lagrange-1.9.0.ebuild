@@ -4,15 +4,15 @@
 
 EAPI=7
 
-inherit cmake cmake-utils
+inherit cmake cmake-utils xdg
 
 DESCRIPTION="Desktop GUI client for browsing Geminispace"
 HOMEPAGE="https://gmi.skyjake.fi/lagrange/"
 SRC_URI="https://github.com/skyjake/$PN/releases/download/v$PV/$P.tar.gz"
-IUSE="+ipc +webp +mp3 +fribidi +harfbuzz +ipc +kerning swrender"
+IUSE="cpu_flags_x86_sse4_1 +ipc +webp +mp3 +fribidi +harfbuzz +ipc +kerning swrender"
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~mips ppc ppc64 sparc x86"
 RDEPEND="
 	media-libs/libsdl2
 	dev-libs/openssl
@@ -46,6 +46,15 @@ src_configure() {
 		# Default features
 		-DENABLE_DOWNLOAD=YES
 		-DTFDN_ENABLE_WARN_ERROR=NO
+		-DTFDN_ENABLE_SSE41=$(usex cpu_flags_x86_sse4_1)
 	)
 	cmake_src_configure
+}
+
+pkg_postinst(){
+	xdg_pkg_postinst
+}
+
+pkg_postrm(){
+	xdg_pkg_postrm
 }
