@@ -18,10 +18,8 @@
 </longdescription>
 <upstream>
 	<maintainer>
-		<email>jaakko.keranen@iki.fi</email>
-		<name>Jaakko Keränen</name>
+		<name>Stephen Hurd (Deuce)</name>
 	</maintainer>
-	<bugs-to>https://github.com/skyjake/lagrange/issues</bugs-to>
-	<remote-id type="github">skyjake/lagrange</remote-id>
+	<bugs-to>https://sourceforge.net/p/syncterm/tickets/</bugs-to>
 </upstream>
 </pkgmetadata>
